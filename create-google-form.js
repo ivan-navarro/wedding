@@ -44,20 +44,20 @@ Tu presencia hará nuestro día aún más especial. Por favor, confirma tu asist
     
     form.addMultipleChoiceItem()
       .setTitle('¿Asistirá?')
-      .setChoices([
-        form.createChoice('Sí, asistiré'),
-        form.createChoice('Lo siento, no podré asistir')
+      .setChoiceValues([
+        'Sí, asistiré',
+        'Lo siento, no podré asistir'
       ])
       .setRequired(true);
     
     form.addMultipleChoiceItem()
       .setTitle('Número de Invitados (incluyéndose)')
-      .setChoices([
-        form.createChoice('Solo yo'),
-        form.createChoice('2 personas'),
-        form.createChoice('3 personas'),
-        form.createChoice('4 personas'),
-        form.createChoice('5 personas')
+      .setChoiceValues([
+        'Solo yo',
+        '2 personas',
+        '3 personas',
+        '4 personas',
+        '5 personas'
       ])
       .setRequired(false)
       .setHelpText('Seleccione el total de personas que asistirán');
@@ -73,19 +73,19 @@ Tu presencia hará nuestro día aún más especial. Por favor, confirma tu asist
     
     form.addMultipleChoiceItem()
       .setTitle('Necesidades de Alojamiento')
-      .setChoices([
-        form.createChoice('Necesito recomendaciones de hotel'),
-        form.createChoice('Reservaré en el hotel con bloqueo para la boda'),
-        form.createChoice('Me gustaría alojamiento en casa compartida'),
-        form.createChoice('Soy local / Tengo mi propio alojamiento')
+      .setChoiceValues([
+        'Necesito recomendaciones de hotel',
+        'Reservaré en el hotel con bloqueo para la boda',
+        'Me gustaría alojamiento en casa compartida',
+        'Soy local / Tengo mi propio alojamiento'
       ])
       .setRequired(false);
     
     form.addMultipleChoiceItem()
       .setTitle('¿Necesita transporte?')
-      .setChoices([
-        form.createChoice('Sí'),
-        form.createChoice('No, tendré mi propio transporte')
+      .setChoiceValues([
+        'Sí',
+        'No, tendré mi propio transporte'
       ])
       .setRequired(false)
       .setHelpText('Proporcionaremos transporte desde el hotel hasta el lugar de la boda.');

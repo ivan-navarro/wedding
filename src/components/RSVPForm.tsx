@@ -30,6 +30,7 @@ export const RSVPForm: React.FC = () => {
     }
   } = useForm<FormData>({
     defaultValues: {
+      guestCount: '1',
       guests: []
     }
   });
@@ -39,27 +40,43 @@ export const RSVPForm: React.FC = () => {
     console.log(data);
     
     // Configuración de Google Forms
-    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse';
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1R3HYBWFCHN_x8DRzKPMOlbyyBIkHIzRnJZf6dqheFlk/formResponse';
     
-    // Mapeo de campos (debes reemplazar estos IDs con los reales de tu Google Form)
+    // Mapeo semántico de campos del formulario
+    // NOTA: Reemplaza los valores con los entry IDs reales de tu Google Form
+    const FORM_FIELDS = {
+      name: 'entry.XXXXXX',              // Nombre Completo
+      phone: 'entry.YYYYYY',             // Teléfono
+      attending: 'entry.ZZZZZZ',         // ¿Asistirá?
+      guestCount: 'entry.AAAAAA',        // Número de Invitados
+      guestsInfo: 'entry.BBBBBB',        // Información de Acompañantes
+      dietaryRestrictions: 'entry.CCCCCC', // Restricciones Dietéticas
+      accommodation: 'entry.DDDDDD',     // Necesidades de Alojamiento
+      transportationNeeded: 'entry.EEEEEE', // ¿Necesita transporte?
+      originLocation: 'entry.FFFFFF',    // Localidad de Origen
+      songRequest: 'entry.GGGGGG',       // Solicitud de Canción
+      message: 'entry.HHHHHH'            // Mensaje para la Pareja
+    };
+    
+    // Preparar datos del formulario
     const formData = new FormData();
-    formData.append('entry.XXXXXX', data.name); // Reemplaza XXXXXX con el ID real
-    formData.append('entry.YYYYYY', data.phone);
-    formData.append('entry.ZZZZZZ', data.attending);
-    formData.append('entry.AAAAAA', data.guestCount);
+    formData.append(FORM_FIELDS.name, data.name);
+    formData.append(FORM_FIELDS.phone, data.phone || '');
+    formData.append(FORM_FIELDS.attending, data.attending);
+    formData.append(FORM_FIELDS.guestCount, data.guestCount || '');
     
     // Para acompañantes, convertir array a string
     const guestsInfo = data.guests.map((guest, index) => 
       `Invitado ${index + 1}: ${guest.name}, Edad: ${guest.age || 'No especificado'}, Restricciones: ${guest.dietaryRestrictions || 'Ninguna'}`
     ).join('\n');
-    formData.append('entry.BBBBBB', guestsInfo);
+    formData.append(FORM_FIELDS.guestsInfo, guestsInfo);
     
-    formData.append('entry.CCCCCC', data.dietaryRestrictions);
-    formData.append('entry.DDDDDD', data.accommodation);
-    formData.append('entry.EEEEEE', data.transportationNeeded);
-    formData.append('entry.FFFFFF', data.originLocation);
-    formData.append('entry.GGGGGG', data.songRequest);
-    formData.append('entry.HHHHHH', data.message);
+    formData.append(FORM_FIELDS.dietaryRestrictions, data.dietaryRestrictions || '');
+    formData.append(FORM_FIELDS.accommodation, data.accommodation || '');
+    formData.append(FORM_FIELDS.transportationNeeded, data.transportationNeeded || '');
+    formData.append(FORM_FIELDS.originLocation, data.originLocation || '');
+    formData.append(FORM_FIELDS.songRequest, data.songRequest || '');
+    formData.append(FORM_FIELDS.message, data.message || '');
 
     try {
       // Enviar a Google Forms
@@ -206,7 +223,7 @@ export const RSVPForm: React.FC = () => {
                                   <label className="block text-gray-700 text-sm mb-1">
                                     Edad
                                   </label>
-                                  <select className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" {...register(`guests.${index}.age` as const)}>
+                                  <select className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" defaultValue="adult" {...register(`guests.${index}.age` as const)}>
                                     <option value="">Seleccionar</option>
                                     <option value="adult">Adulto</option>
                                     <option value="teen">
