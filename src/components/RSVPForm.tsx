@@ -45,17 +45,17 @@ export const RSVPForm: React.FC = () => {
     // Mapeo semántico de campos del formulario
     // NOTA: Reemplaza los valores con los entry IDs reales de tu Google Form
     const FORM_FIELDS = {
-      name: 'entry.XXXXXX',              // Nombre Completo
-      phone: 'entry.YYYYYY',             // Teléfono
-      attending: 'entry.ZZZZZZ',         // ¿Asistirá?
-      guestCount: 'entry.AAAAAA',        // Número de Invitados
-      guestsInfo: 'entry.BBBBBB',        // Información de Acompañantes
-      dietaryRestrictions: 'entry.CCCCCC', // Restricciones Dietéticas
-      accommodation: 'entry.DDDDDD',     // Necesidades de Alojamiento
-      transportationNeeded: 'entry.EEEEEE', // ¿Necesita transporte?
-      originLocation: 'entry.FFFFFF',    // Localidad de Origen
-      songRequest: 'entry.GGGGGG',       // Solicitud de Canción
-      message: 'entry.HHHHHH'            // Mensaje para la Pareja
+      name: 'entry.1504512597',              // Nombre Completo
+      phone: 'entry.1931157242',             // Teléfono
+      attending: 'entry.1657805661',         // ¿Asistirá?
+      guestCount: 'entry.819952964',        // Número de Invitados
+      guestsInfo: 'entry.2057794306',        // Información de Acompañantes
+      dietaryRestrictions: 'entry.1265115496', // Restricciones Dietéticas
+      accommodation: 'entry.1703827819',     // Necesidades de Alojamiento
+      transportationNeeded: 'entry.1108909821', // ¿Necesita transporte?
+      originLocation: 'entry.1736227356',    // Localidad de Origen
+      songRequest: 'entry.1884178261',       // Solicitud de Canción
+      message: 'entry.587518505'            // Mensaje para la Pareja
     };
     
     // Preparar datos del formulario
