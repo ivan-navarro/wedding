@@ -1,5 +1,4 @@
 import React from 'react';
-import { HeartIcon } from 'lucide-react';
 interface AboutUsProps {
   brideFirstName: string;
   brideLastName: string;
@@ -40,7 +39,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                 neumóloga refleja su compromiso con el cuidado y bienestar de
                 los demás. Su vocación por ayudar a las personas 
                 es solo una muestra de su extraordinaria capacidad para
-                dar vida y esperanza. Su risa contagiosa y su corazón bondadoso
+                dar vida y esperanza. Su deslumbrante sonrisa  y su corazón bondadoso
                 fueron lo que conquistaron a Ivan desde el primer momento.
               </p>
               <div className="flex justify-center space-x-4">
@@ -70,9 +69,8 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                 Ivan es la definición de determinación y lealtad. Como ingeniero
                 informático, resuelve problemas con facilidad, pero su mayor
                 logro es cómo ha construido una relación basada en la confianza
-                y el respeto mutuo. Su sentido del humor y su capacidad para
-                hacer sentir especial a Yuliana son cualidades que demuestran el
-                hombre extraordinario que es.
+                y el respeto mutuo. Su cariñosidad y capacidad para
+                hacer sentir especial a Yuliana son cualidades que demuestran el hombre extraordinario que es.
               </p>
               <div className="flex justify-center space-x-4">
                 {/* Social Media Icons */}
@@ -89,17 +87,17 @@ export const AboutUs: React.FC<AboutUsProps> = ({
               </div>
             </div>
           </div>
-          {/* Our Story Timeline */}
+          {/* Our Story Timeline - Commented out
           <div className="mt-16 max-w-3xl mx-auto">
             <h3 className="text-2xl font-serif text-gray-800 mb-8 text-center">
               Cómo Nos Conocimos
             </h3>
             <div className="relative">
-              {/* Timeline Line */}
+              Timeline Line
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-rose-200"></div>
-              {/* Timeline Items */}
+              Timeline Items
               <div className="space-y-12">
-                {/* First Meeting */}
+                First Meeting
                 <div className="relative">
                   <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center shadow-lg">
@@ -114,12 +112,11 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                       4 de Febrero, 2024
                     </p>
                     <p className="text-gray-600">
-                      Nos conocimos a través de las redes sociales, donde una conversación espontánea nos llevó a descubrir intereses y sueños compartidos. 
-                      Desde ese primer contacto, supimos que había una conexión especial entre nosotros.
+                
                     </p>
                   </div>
                 </div>
-                {/* First Date */}
+                First Date
                 <div className="relative">
                   <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center shadow-lg">
@@ -128,18 +125,13 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                   </div>
                   <div className="mr-auto ml-8 md:ml-auto md:mr-0 md:pl-8 md:w-1/2">
                     <h4 className="text-xl font-medium text-gray-800">
-                      Primera Cita
                     </h4>
                     <p className="text-rose-600 font-medium mb-2">
-                      8 de Febrero, 2024
                     </p>
-                    <p className="text-gray-600">
-                      Nuestra primera cita fue en un pequeño bar de Sant Cugat.
-                      Hablamos y paseamos toda la tarde soñando con la posibilidad de haber encontrado algo muy especial.
-                    </p>
+                    <p className="text-gray-600"></p>
                   </div>
                 </div>
-                {/* Moving In */}
+                Moving In
                 <div className="relative">
                   <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center shadow-lg">
@@ -148,18 +140,13 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                   </div>
                   <div className="ml-auto mr-8 md:mr-auto md:ml-0 md:pr-8 md:w-1/2 text-right md:text-left">
                     <h4 className="text-xl font-medium text-gray-800">
-                      Nuestro Hogar
                     </h4>
                     <p className="text-rose-600 font-medium mb-2">
-                      8 de marzo, 2024
                     </p>
-                    <p className="text-gray-600">
-                      Apenas habían pasado unas semanas y ya sabíamos que queríamos compartir todo el tiempo con el otro. 
-                      Cada día juntos ha sido una verdadera aventura llena de risas, aprendizajes y amor incondicional.
-                    </p>
+                    <p className="text-gray-600"> </p>
                   </div>
                 </div>
-                {/* Proposal */}
+                Proposal
                 <div className="relative">
                   <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <div className="w-10 h-10 rounded-full bg-rose-500 flex items-center justify-center shadow-lg">
@@ -173,16 +160,13 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                     <p className="text-rose-600 font-medium mb-2">
                       8 de mayo, 2025
                     </p>
-                    <p className="text-gray-600">
-                      Durante un viaje a Cancun, Ivan preparó una sorpresa bajo las estrellas. 
-                      Allí, con el cielo como testigo, le pidió que fuera su compañera para toda la
-                      vida. Y por supuesto, dijo que sí, poniendo la guinda a un viaje inolvidable.
-                    </p>
+                    <p className="text-gray-600"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>;
