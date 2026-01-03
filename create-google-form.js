@@ -18,7 +18,7 @@ function createWeddingRSVPForm() {
     // Configurar el formulario
     form.setTitle('Confirmar Asistencia - Boda Ivan & Yuliana');
     form.setDescription(`
-Tu presencia hará nuestro día aún más especial. Por favor, confirma tu asistencia antes del 1 de marzo de 2026 para poder planificar una celebración perfecta.
+Tu presencia hará nuestro día aún más especial. Por favor, indica tu previsión de asistencia lo antes posible para tener una estimación. Podrás actualizarla más adelante en caso de cambios.
 
 📅 Fecha: 1 de mayo de 2026
 📍 Lugar: Vil·la Minerva, Barcelona
@@ -63,6 +63,11 @@ Tu presencia hará nuestro día aún más especial. Por favor, confirma tu asist
       .setHelpText('Seleccione el total de personas que asistirán');
     
     form.addParagraphTextItem()
+      .setTitle('Restricciones alimentarias propias y otras necesidades')
+      .setRequired(false)
+      .setHelpText('Restricciones alimentarias, alergias o cualquier otra necesidad especial');
+    
+    form.addParagraphTextItem()
       .setTitle('Información de Acompañantes')
       .setRequired(false)
       .setHelpText('Por favor, proporcione los detalles de todas las personas que asistirán con usted. Para cada acompañante incluya: Nombre completo, Edad (Adulto/Adolescente/Niño/Bebé), Restricciones alimentarias o alergias');
@@ -74,42 +79,38 @@ Tu presencia hará nuestro día aún más especial. Por favor, confirma tu asist
     form.addMultipleChoiceItem()
       .setTitle('Necesidades de Alojamiento')
       .setChoiceValues([
-        'Necesito recomendaciones de hotel',
-        'Reservaré en el hotel con bloqueo para la boda',
-        'Me gustaría alojamiento en casa compartida',
-        'Soy local / Tengo mi propio alojamiento'
+        'Volveré a mi propio alojamiento',
+        'Me quedaré en un hotel',
+        'Me quedaré en una casa / apartamento',
+        'Todavía no he decidido'
       ])
       .setRequired(false);
+    
+    form.addMultipleChoiceItem()
+      .setTitle('¿Dispones ya de reserva?')
+      .setChoiceValues([
+        'Sí',
+        'No'
+      ])
+      .setRequired(false)
+      .setHelpText('Solo si elegiste hotel o casa/apartamento');
     
     form.addMultipleChoiceItem()
       .setTitle('¿Necesita transporte?')
       .setChoiceValues([
         'Sí',
-        'No, tendré mi propio transporte'
+        'No, usaré mi propio transporte',
+        'No, pero me podría interesar'
       ])
       .setRequired(false)
-      .setHelpText('Proporcionaremos transporte desde el hotel hasta el lugar de la boda.');
+      .setHelpText('Intentaremos facilitar el transporte en la medida de lo posible.');
     
     form.addTextItem()
-      .setTitle('Localidad de Origen (Opcional)')
+      .setTitle('¿Cuál es tu localidad de salida y regreso?')
       .setRequired(false)
-      .setHelpText('¿De qué ciudad o localidad vienes? Nos ayuda a organizar mejor el transporte y alojamiento.');
+      .setHelpText('Ciudad o localidad. Intentaremos facilitar el transporte y alojamiento en la medida de los posible.');
     
-    // 4. Preferencias para la Celebración
-    form.addSectionHeaderItem()
-      .setTitle('🎵 Preferencias para la Celebración');
-    
-    form.addParagraphTextItem()
-      .setTitle('Restricciones Dietéticas y Alergias')
-      .setRequired(false)
-      .setHelpText('Por favor, indique cualquier restricción dietética, alergias alimentarias o necesidades especiales (ej. vegetariano, sin gluten, alergia a frutos secos, etc.)');
-    
-    form.addTextItem()
-      .setTitle('Solicitud de Canción para la Fiesta')
-      .setRequired(false)
-      .setHelpText('¿Qué canciones no pueden faltar esta noche?');
-    
-    // 5. Mensaje Final
+    // 4. Mensaje Final
     form.addSectionHeaderItem()
       .setTitle('💌 Mensaje para la Pareja');
     

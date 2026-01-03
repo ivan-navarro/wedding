@@ -14,6 +14,7 @@ type FormData = {
   guests: GuestInfo[];
   dietaryRestrictions: string;
   accommodation: string;
+  hasReservation?: string;
   transportationNeeded: string;
   originLocation: string;
   message: string;
@@ -62,6 +63,7 @@ export const RSVPForm: React.FC = () => {
         guestsInfo: 'entry.2057794306',        // Información de Acompañantes
         dietaryRestrictions: 'entry.1265115496', // Restricciones Dietéticas
         accommodation: 'entry.1703827819',     // Necesidades de Alojamiento
+        hasReservation: 'entry.1808178294',    // ¿Dispone de reserva?
         transportationNeeded: 'entry.1108909821', // ¿Necesita transporte?
         originLocation: 'entry.1736227356',    // Localidad de Origen
         message: 'entry.587518505'            // Mensaje para la Pareja
@@ -83,6 +85,7 @@ export const RSVPForm: React.FC = () => {
       
       formData.append(FORM_FIELDS.dietaryRestrictions, data.dietaryRestrictions || '');
       formData.append(FORM_FIELDS.accommodation, data.accommodation || '');
+      formData.append(FORM_FIELDS.hasReservation, data.hasReservation || '');
       formData.append(FORM_FIELDS.transportationNeeded, data.transportationNeeded || '');
       formData.append(FORM_FIELDS.originLocation, data.originLocation || '');
       formData.append(FORM_FIELDS.message, data.message || '');
@@ -209,6 +212,20 @@ export const RSVPForm: React.FC = () => {
                         </p>}
                     </div>
                     
+                    {/* Campo de Restricciones Alimentarias antes de acompañantes */}
+                    <div className="mb-6">
+                      <label htmlFor="dietaryRestrictions" className="block text-gray-700 font-medium mb-2">
+                        Restricciones alimentarias propias y otras necesidades
+                      </label>
+                      <textarea 
+                        id="dietaryRestrictions" 
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" 
+                        placeholder="Restricciones alimentarias, alergias o cualquier otra necesidad especial" 
+                        rows={2} 
+                        {...register('dietaryRestrictions')}
+                      ></textarea>
+                    </div>
+                    
                     {guestCount && getGuestNumber(guestCount) > 1 && <div className="mb-6">
                         <label className="block text-gray-700 font-medium mb-2">
                           Información de Acompañantes
@@ -262,20 +279,6 @@ export const RSVPForm: React.FC = () => {
                             </div>)}
                         </div>
                       </div>}
-                  
-                  {/* Campo de Restricciones Alimentarias después de invitados */}
-                  <div className="mb-6">
-                    <label htmlFor="dietaryRestrictions" className="block text-gray-700 font-medium mb-2">
-                      Restricciones alimentarias propias y otras necesidades
-                    </label>
-                    <textarea 
-                      id="dietaryRestrictions" 
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" 
-                      placeholder="Restricciones alimentarias, alergias o cualquier otra necesidad especial" 
-                      rows={2} 
-                      {...register('dietaryRestrictions')}
-                    ></textarea>
-                  </div>
                   </>}
               
               {attending === 'Sí, asistiré' && <>
@@ -298,14 +301,35 @@ export const RSVPForm: React.FC = () => {
                         <option value="Me quedaré en un hotel">  
                           Me quedaré en un hotel
                         </option>
-                        <option value="Me gustaría alojamiento en casa compartida">
-                          Me gustaría alojamiento en casa compartida
+                        <option value="Me quedaré en una casa / apartamento">
+                          Me quedaré en una casa / apartamento
+                        </option>
+                        <option value="Todavía no he decidido">
+                          Todavía no he decidido
                         </option>
                       </select>
                       {errors.accommodation && <p className="text-red-500 text-sm mt-1">
                         Por favor, seleccione una opción de alojamiento
                       </p>}
                     </div>
+                    
+                    {(watch('accommodation') === 'Me quedaré en un hotel' || watch('accommodation') === 'Me quedaré en una casa / apartamento') && (
+                      <div className="mb-6">
+                        <label className="block text-gray-700 font-medium mb-2">
+                          ¿Dispones ya de reserva?
+                        </label>
+                        <div className="flex space-x-4">
+                          <label className="flex items-center">
+                            <input type="radio" value="Sí" className="w-4 h-4 text-rose-600 focus:ring-rose-500 border-gray-300" {...register('hasReservation')} />
+                            <span className="ml-2 text-gray-700">Sí</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input type="radio" value="No" className="w-4 h-4 text-rose-600 focus:ring-rose-500 border-gray-300" {...register('hasReservation')} />
+                            <span className="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                      </div>
+                    )}
                     <div className="mb-6">
                       <label className="block text-gray-700 font-medium mb-2">
                         ¿Necesita transporte? *
@@ -340,9 +364,9 @@ export const RSVPForm: React.FC = () => {
                     </div>
                     <div className="mb-6">
                       <label htmlFor="originLocation" className="block text-gray-700 font-medium mb-2">
-                        Localidad de salida / regreso
+                        ¿Cuál es tu localidad de salida y regreso?
                       </label>
-                      <input type="text" id="originLocation" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" placeholder="¿De qué ciudad o localidad vienes?" {...register('originLocation')} />
+                      <input type="text" id="originLocation" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500" placeholder="Ciudad o localidad" {...register('originLocation')} />
                       <p className="text-gray-500 text-sm mt-1">
                         Intentaremos facilitar el transporte y alojamiento en la medida de los posible.
                       </p>

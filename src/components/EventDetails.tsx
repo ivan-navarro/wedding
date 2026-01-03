@@ -29,19 +29,24 @@ export const EventDetails: React.FC<EventDetailsProps> = ({
   });
   return <section id="details" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
+        {/* Save the Date Image */}
+        <div className="mb-10 text-center">
+          <img 
+            src="src/img/save-the-date.jpeg" 
+            alt="Save the Date" 
+            className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+        
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-800 mb-2">
             Detalles del Evento
           </h2>
           <div className="w-16 h-1 bg-rose-500 mx-auto"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-            Nos sentimos muy felices de compartir este día tan especial con
-            ustedes. Aquí encontrarán toda la información necesaria para
-            acompañarnos en nuestra celebración.
-          </p>
         </div>
         <div className="max-w-4xl mx-auto">
-          <div className="bg-neutral-50 rounded-lg shadow-lg overflow-hidden mb-10">
+
+          <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden mb-10 border border-gray-200">
             <div className="md:flex">
               <div
                 className="md:w-1/2 bg-cover bg-center h-64 md:h-auto"
@@ -73,7 +78,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({
               </div>
             </div>
           </div>
-          <div className="bg-neutral-50 rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-gray-100 rounded-lg shadow-lg overflow-hidden border border-gray-200">
             <div className="p-8">
               <h3 className="text-2xl font-serif text-gray-800 mb-6 text-center">
                 Horario

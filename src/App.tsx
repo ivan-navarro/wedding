@@ -1,5 +1,6 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { NewsHeader } from './components/NewsHeader';
 import { EventDetails } from './components/EventDetails';
 import { AboutUs } from './components/AboutUs';
 import { RSVPForm } from './components/RSVPForm';
@@ -49,6 +50,7 @@ export function App() {
       <Header brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
       <main>
         <Hero brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} weddingDate={weddingDetails.weddingDate} />
+        <NewsHeader />
         <EventDetails venue={weddingDetails.venue} events={weddingDetails.events} weddingDate={weddingDetails.weddingDate} />
         <AboutUs brideFirstName={weddingDetails.brideFirstName} brideLastName={weddingDetails.brideLastName} groomFirstName={weddingDetails.groomFirstName} groomLastName={weddingDetails.groomLastName} />
         <RSVPForm />
