@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "homepage": "https://ivan-navarro.github.io/wedding",
+  "homepage": "https://boda-ivan-y-yuliana.es",
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",

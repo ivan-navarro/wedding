@@ -32,7 +32,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({
         {/* Save the Date Image */}
         <div className="mb-10 text-center">
           <img 
-            src="src/img/save-the-date.jpeg" 
+            src="img/save-the-date.jpeg" 
             alt="Save the Date" 
             className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
           />
@@ -51,7 +51,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({
               <div
                 className="md:w-1/2 bg-cover bg-center h-64 md:h-auto"
                 style={{
-                  backgroundImage: 'url("src/img/villa.jpg")'
+                  backgroundImage: 'url("img/villa.jpg")'
                 }}
               ></div>
               <div className="p-8 md:w-1/2">

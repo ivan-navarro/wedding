@@ -10,7 +10,7 @@ export const NewsHeader: React.FC = () => {
             <div className="md:w-1/3 mb-6 md:mb-0">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="src/img/ultima-boda.jpeg" 
+                  src="img/ultima-boda.jpeg" 
                   alt="Yuliana e Ivan como anfitriones" 
                   className="w-full h-64 object-cover"
                 />
