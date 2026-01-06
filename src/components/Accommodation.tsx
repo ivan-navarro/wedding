@@ -1,26 +1,26 @@
 import React from 'react';
 
-interface AboutUsProps {
+interface AccommodationProps {
   brideFirstName: string;
   brideLastName: string;
   groomFirstName: string;
   groomLastName: string;
 }
 
-export const AboutUs: React.FC<AboutUsProps> = ({
+export const Accommodation: React.FC<AccommodationProps> = ({
   brideFirstName,
   brideLastName,
   groomFirstName,
   groomLastName
 }) => {
-  return <section id="about" className="py-12 bg-neutral-50">
+  return <section id="accommodation" className="py-12 bg-neutral-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-serif text-gray-800 mb-2">
             Alojamientos Recomendados
           </h2>
           <div className="w-16 h-1 bg-rose-500 mx-auto"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-sm">
+          <p className="text-gray-600 max-w-2xl mx-auto mt-3 text-xs">
             Hemos seleccionado los mejores alojamientos cerca del lugar de la celebración.
           </p>
         </div>
@@ -31,7 +31,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({
               <div className="p-4">
                 <h3 className="text-lg font-serif text-gray-800 mb-2">New Hotel Colon ***</h3>
                 <div className="mb-2">
-                  <span className="inline-block bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Hotel</span>
+                  <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Hotel</span>
                 </div>
                 <p className="text-gray-600 mb-3 text-xs">
                   9 min en coche. Ideal para parejas.
@@ -71,7 +71,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({
               <div className="p-4">
                 <h3 className="text-lg font-serif text-gray-800 mb-2">Vila d'Alba</h3>
                 <div className="mb-2">
-                  <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Casa Completa</span>
+                  <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Apartamento</span>
                 </div>
                 <p className="text-gray-600 mb-3 text-xs">
                   4 hab. 3 min coche / 15 min andando.
@@ -92,7 +92,7 @@ export const AboutUs: React.FC<AboutUsProps> = ({
                 <h3 className="text-lg font-serif text-gray-800 mb-2">Santa Romana Apartments</h3>
                 <div className="mb-2">
                   <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Apartamento</span>
-                  <span className="ml-2 inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">✓ Pre-reservado</span>
+                  <span className="ml-2 inline-block bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">✓ Pre-reserva</span>
                 </div>
                 <p className="text-gray-600 mb-3 text-xs">
                   2 dorm. 9 min. Cancel. gratuita.
@@ -112,8 +112,8 @@ export const AboutUs: React.FC<AboutUsProps> = ({
               <div className="p-4">
                 <h3 className="text-lg font-serif text-gray-800 mb-2">Apartaments Voralmar</h3>
                 <div className="mb-2">
-                  <span className="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Apartamento</span>
-                  <span className="ml-2 inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">✓ Pre-reservado</span>
+                  <span className="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">Apartamento</span>
+                  <span className="ml-2 inline-block bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">✓ Pre-reserva</span>
                 </div>
                 <p className="text-gray-600 mb-3 text-xs">
                   2 dorm. 9 min. Cancel. gratuita.
@@ -140,6 +140,10 @@ export const AboutUs: React.FC<AboutUsProps> = ({
               <div>
                 <h4 className="font-semibold text-gray-800 mb-1">⏰ Reservas</h4>
                 <p>No hay mucha oferta cercana y los alojamientos pueden agotarse. Recomendamos reservar cuanto antes.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-1">🏠 Pre-reservas</h4>
+                <p>Tenemos 2 alojamientos pre-reservados (Santa Romana y Voralmar) disponibles para nuestros invitados. Si estás interesado/a, contáctanos lo antes posible.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-1">🚗 Transporte</h4>

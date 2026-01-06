@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="w-24 h-1 bg-rose-500 mx-auto mb-4 md:mb-6"></div>
         <p className="text-white text-xl md:text-2xl mb-3">{formattedDate}</p>
         <p className="text-white text-lg italic mb-8 md:mb-10">
-          "El amor no es mirarse el uno al otro, sino mirar los dos en la misma dirección"
+          "Amar no es mirarse el uno al otro, sino mirar juntos en la misma dirección"
         </p>
         <div className="mb-8 md:mb-12">
           <CountdownTimer targetDate={weddingDate} />

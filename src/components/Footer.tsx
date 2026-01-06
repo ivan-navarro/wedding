@@ -17,8 +17,11 @@ export const Footer: React.FC<FooterProps> = ({
     id: 'details',
     label: 'Detalles'
   }, {
-    id: 'about',
-    label: 'Nosotros'
+    id: 'dresscode',
+    label: 'Dress Code'
+  }, {
+    id: 'accommodation',
+    label: 'Alojamientos'
   }, {
     id: 'rsvp',
     label: 'Confirmar'
@@ -35,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="w-12 h-0.5 bg-rose-400"></div>
           </div>
             <p className="text-gray-300 mt-4 max-w-xl mx-auto">
-            "Amar no es mirarse el uno al otro, sino mirar juntos en la misma dirección"
+            "El amor se fortalece en la adversidad y se enriquece con cada momento compartido"
             </p>
         </div>
         <div className="flex justify-center space-x-6 mb-6">

@@ -2,8 +2,10 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { NewsHeader } from './components/NewsHeader';
 import { EventDetails } from './components/EventDetails';
-import { AboutUs } from './components/AboutUs';
+import { Accommodation } from './components/Accommodation';
+import { DressCode } from './components/DressCode';
 import { RSVPForm } from './components/RSVPForm';
+import { FinalMessage } from './components/FinalMessage';
 import { Footer } from './components/Footer';
 export function App() {
   // Customizable wedding details - edit these to personalize the site
@@ -32,7 +34,7 @@ export function App() {
       {
         name: 'Aperitivo',
         time: '18:30',
-        description: 'Disfruta de bebidas y aperitivos mientras capturamos nuestros primeros momentos como marido y mujer con todos vosotros'
+        description: 'Disfruta de bebidas y aperitivos mientras capturamos nuestros primeros momentos como marido y mujer con todos vosotros. Los niños dispondrán de su propio espacio vigilado donde divertirse.'
       },
       {
         name: 'Cena',
@@ -52,8 +54,10 @@ export function App() {
         <Hero brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} weddingDate={weddingDetails.weddingDate} />
         <NewsHeader />
         <EventDetails venue={weddingDetails.venue} events={weddingDetails.events} weddingDate={weddingDetails.weddingDate} />
-        <AboutUs brideFirstName={weddingDetails.brideFirstName} brideLastName={weddingDetails.brideLastName} groomFirstName={weddingDetails.groomFirstName} groomLastName={weddingDetails.groomLastName} />
+        <DressCode />
+        <Accommodation brideFirstName={weddingDetails.brideFirstName} brideLastName={weddingDetails.brideLastName} groomFirstName={weddingDetails.groomFirstName} groomLastName={weddingDetails.groomLastName} />
         <RSVPForm />
+        <FinalMessage brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
       </main>
       <Footer brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
     </div>;

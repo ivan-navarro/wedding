@@ -79,7 +79,7 @@ export const RSVPForm: React.FC = () => {
       // Para acompañantes, convertir array a string (solo los que tengan nombre)
       const filledGuests = data.guests.filter(guest => guest.name && guest.name.trim() !== '');
       const guestsInfo = filledGuests.map((guest, index) => 
-        `Invitado ${index + 1}: ${guest.name}, Edad: ${guest.age || 'No especificado'}, Restricciones: ${guest.dietaryRestrictions || 'Ninguna'}`
+        `Acompañante ${index + 1}: ${guest.name}, Edad: ${guest.age || 'No especificado'}, Restricciones: ${guest.dietaryRestrictions || 'Ninguna'}`
       ).join('\n');
       formData.append(FORM_FIELDS.guestsInfo, guestsInfo);
       
@@ -238,7 +238,7 @@ export const RSVPForm: React.FC = () => {
                           {Array.from({ length: getGuestNumber(guestCount) - 1 }, (_, index) => <div key={index} className="p-4 border border-gray-200 rounded-md bg-gray-50">
                               <div className="mb-2">
                                 <h4 className="font-medium">
-                                  Invitado {index + 1}
+                                  Acompañante {index + 1}
                                 </h4>
                               </div>
                               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
