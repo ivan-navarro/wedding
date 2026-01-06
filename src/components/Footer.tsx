@@ -38,7 +38,7 @@ export const Footer: React.FC<FooterProps> = ({
             <div className="w-12 h-0.5 bg-rose-400"></div>
           </div>
             <p className="text-gray-300 mt-4 max-w-xl mx-auto">
-            "El amor se fortalece en la adversidad y se enriquece con cada momento compartido"
+            "Reencontrarnos con la familia y amigos rodeados de amor: la mejor celebración"
             </p>
         </div>
         <div className="flex justify-center space-x-6 mb-6">
