@@ -139,11 +139,7 @@ export const Accommodation: React.FC<AccommodationProps> = ({
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-1">⏰ Reservas</h4>
-                <p>No hay mucha oferta cercana y los alojamientos pueden agotarse. Recomendamos reservar cuanto antes.</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-800 mb-1">🏠 Pre-reservas</h4>
-                <p>Tenemos 2 alojamientos pre-reservados (Santa Romana y Voralmar) disponibles para nuestros invitados. Si estás interesado/a, contáctanos lo antes posible.</p>
+                <p>No hay mucha oferta cercana y los alojamientos pueden agotarse. Recomendamos reservar cuanto antes. Tenemos 2 alojamientos pre-reservados (Santa Romana y Voralmar) disponibles para nuestros invitados. Si estás interesado/a, contáctanos lo antes posible.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-800 mb-1">🚗 Transporte</h4>
