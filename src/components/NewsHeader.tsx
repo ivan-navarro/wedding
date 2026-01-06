@@ -2,7 +2,7 @@ import React from 'react';
 
 export const NewsHeader: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-rose-50 to-pink-50 py-8 border-b border-rose-100">
+    <section className="bg-gradient-to-r from-rose-50 to-pink-50 py-12 border-b border-rose-100">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="md:flex items-center gap-8">

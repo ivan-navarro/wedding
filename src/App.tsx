@@ -34,7 +34,7 @@ export function App() {
       {
         name: 'Aperitivo',
         time: '18:30',
-        description: 'Disfruta de bebidas y aperitivos mientras capturamos nuestros primeros momentos como marido y mujer con todos vosotros. Los niños dispondrán de su propio espacio vigilado donde divertirse.'
+        description: 'Disfruta de bebidas y aperitivos mientras capturamos con todos vosotros nuestros primeros momentos como marido y mujer.\nTambién los niños dispondrán de un espacio para jugar y divertirse.'
       },
       {
         name: 'Cena',

@@ -27,7 +27,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({
     month: 'long',
     day: 'numeric'
   });
-  return <section id="details" className="py-20 bg-white">
+  return <section id="details" className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         {/* Save the Date Image */}
         <div className="mb-10 text-center">

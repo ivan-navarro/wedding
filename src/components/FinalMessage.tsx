@@ -3,7 +3,7 @@ import { HeartIcon } from 'lucide-react';
 
 export const FinalMessage: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-rose-50 to-pink-50">
+    <section className="pt-4 pb-12 bg-gradient-to-r from-rose-50 to-pink-50">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <HeartIcon className="w-12 h-12 text-rose-500 mx-auto mb-6" />
