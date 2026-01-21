@@ -44,6 +44,12 @@ export const Header: React.FC<HeaderProps> = ({
     id: 'accommodation',
     label: 'Alojamientos'
   }, {
+    id: 'gifts',
+    label: 'Regalos'
+  }, {
+    id: 'music',
+    label: 'Música'
+  }, {
     id: 'rsvp',
     label: 'Confirmar'
   }];

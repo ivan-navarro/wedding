@@ -23,6 +23,12 @@ export const Footer: React.FC<FooterProps> = ({
     id: 'accommodation',
     label: 'Alojamientos'
   }, {
+    id: 'gifts',
+    label: 'Regalos'
+  }, {
+    id: 'music',
+    label: 'Música'
+  }, {
     id: 'rsvp',
     label: 'Confirmar'
   }];
@@ -30,9 +36,9 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="container mx-auto px-4 text-center">
         <div className="mb-4">
           <h3 className="text-2xl font-serif mb-2">
-            {groomFirstName} & {brideFirstName}
+             {groomFirstName} & {brideFirstName}
           </h3>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-3">
             <div className="w-12 h-0.5 bg-rose-400"></div>
             <HeartIcon className="w-5 h-5 text-rose-400 mx-2" />
             <div className="w-12 h-0.5 bg-rose-400"></div>
@@ -52,8 +58,7 @@ export const Footer: React.FC<FooterProps> = ({
             </button>)}
         </div>
         <p className="text-gray-400 text-sm">
-          &copy; {currentYear} {groomFirstName} & {brideFirstName} | Todos los
-          derechos reservados
+          &copy; {currentYear} {groomFirstName} & {brideFirstName}  | Todos los derechos reservados
         </p>
       </div>
     </footer>;

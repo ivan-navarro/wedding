@@ -4,6 +4,8 @@ import { NewsHeader } from './components/NewsHeader';
 import { EventDetails } from './components/EventDetails';
 import { Accommodation } from './components/Accommodation';
 import { DressCode } from './components/DressCode';
+import { Gifts } from './components/Gifts';
+import { MusicRequests } from './components/MusicRequests';
 import { RSVPForm } from './components/RSVPForm';
 import { FinalMessage } from './components/FinalMessage';
 import { Footer } from './components/Footer';
@@ -56,6 +58,11 @@ export function App() {
         <EventDetails venue={weddingDetails.venue} events={weddingDetails.events} weddingDate={weddingDetails.weddingDate} />
         <DressCode />
         <Accommodation brideFirstName={weddingDetails.brideFirstName} brideLastName={weddingDetails.brideLastName} groomFirstName={weddingDetails.groomFirstName} groomLastName={weddingDetails.groomLastName} />
+        <MusicRequests 
+          googleFormUrl="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
+          spotifyPlaylistUrl="https://open.spotify.com/playlist/YOUR_PLAYLIST_ID"
+        />
+        <Gifts googleDriveUrl="https://drive.google.com/file/d/YOUR_FILE_ID/view" />
         <RSVPForm />
         <FinalMessage brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
       </main>
