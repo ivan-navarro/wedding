@@ -6,7 +6,7 @@ export const NewsHeader: React.FC = () => {
       date: '22 de Enero',
       badge: '¡Novedad!',
       title: '¡Nueva sección! 🎁',
-      image: 'src/img/regalo-viaje.jpg',
+      image: 'img/regalo-viaje.jpg',
       imageAlt: '',
       content: (
         <>
