@@ -58,10 +58,10 @@ export function App() {
         <EventDetails venue={weddingDetails.venue} events={weddingDetails.events} weddingDate={weddingDetails.weddingDate} />
         <DressCode />
         <Accommodation brideFirstName={weddingDetails.brideFirstName} brideLastName={weddingDetails.brideLastName} groomFirstName={weddingDetails.groomFirstName} groomLastName={weddingDetails.groomLastName} />
-        <MusicRequests 
+        {/* <MusicRequests 
           googleFormUrl="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
           spotifyPlaylistUrl="https://open.spotify.com/playlist/YOUR_PLAYLIST_ID"
-        />
+        /> */}
         <Gifts googleDriveUrl="https://drive.google.com/file/d/1Wl5UbZnWXzBvNIYU1RBC1MRzqiBO0_Ng/view?usp=drive_link" />
         <RSVPForm />
         <FinalMessage brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
