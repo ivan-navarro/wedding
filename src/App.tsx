@@ -62,7 +62,7 @@ export function App() {
           googleFormUrl="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform"
           spotifyPlaylistUrl="https://open.spotify.com/playlist/YOUR_PLAYLIST_ID"
         />
-        <Gifts googleDriveUrl="https://drive.google.com/file/d/YOUR_FILE_ID/view" />
+        <Gifts googleDriveUrl="https://drive.google.com/file/d/1Wl5UbZnWXzBvNIYU1RBC1MRzqiBO0_Ng/view?usp=drive_link" />
         <RSVPForm />
         <FinalMessage brideFirstName={weddingDetails.brideFirstName} groomFirstName={weddingDetails.groomFirstName} />
       </main>

@@ -5,17 +5,15 @@ export const NewsHeader: React.FC = () => {
     {
       date: '22 de Enero',
       badge: '¡Novedad!',
-      title: '¡Nuevas secciones! 🎉',
-      image: 'img/bailando.jpeg',
-      imageAlt: 'Invitados bailando en la fiesta',
+      title: '¡Nueva sección! 🎁',
+      image: 'src/img/regalo-viaje.jpg',
+      imageAlt: '',
       content: (
         <>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            {' '}<a href="#music" className="text-rose-600 font-semibold underline hover:text-rose-700">
-              Elige tu Canción
-            </a>{' '}
-            ¡Queremos que formes parte de la banda sonora de nuestra boda! 
-            Visita nuestra sección y comparte las canciones que te gustaría escuchar en la fiesta 🎵
+            Tras vuestras consultas y muestras de cariño, hemos creado una nueva sección 
+            donde podéis ayudarnos a cumplir el sueño de nuestra luna de miel perfecta. 
+            ¡Vuestra presencia ya es el mayor regalo!
           </p>
           
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -23,12 +21,10 @@ export const NewsHeader: React.FC = () => {
             <a href="#gifts" className="text-rose-600 font-semibold underline hover:text-rose-700">
               Regalos
             </a>{' '}
-            Y si queréis ayudarnos a cumplir el sueño de nuestra luna de miel perfecta, 
-            cualquier detalle será recibido con todo nuestro amor 💕
           </p>
         </>
       ),
-      footer: '🎵 ¡Hagamos de esta fiesta algo inolvidable juntos!'
+      footer: '💕 ¡Gracias de corazón por hacer de este día algo inolvidable!'
     },
     {
       date: '7 de Enero',
@@ -72,7 +68,7 @@ export const NewsHeader: React.FC = () => {
                   <img 
                     src={item.image}
                     alt={item.imageAlt}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-80 object-cover object-center"
                   />
                 </div>
               </div>

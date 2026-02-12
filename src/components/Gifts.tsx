@@ -31,7 +31,7 @@ export const Gifts: React.FC<GiftsProps> = ({
               <p className="text-gray-700 leading-relaxed mb-4">
                 Compartir este día especial con vosotros es el regalo más valioso que podríamos 
                 recibir. Si además queréis contribuir con vuestro cariño a hacer realidad 
-                nuestra luna de miel soñada 🏝️, aceptaremos vuestro gesto con el corazón lleno 
+                nuestra luna de miel soñada 🌏✈️, aceptaremos vuestro gesto con el corazón lleno 
                 de gratitud:
               </p>
             </div>
@@ -40,37 +40,54 @@ export const Gifts: React.FC<GiftsProps> = ({
           <div className="space-y-4 mb-6 ml-10">
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
-              <p className="text-gray-700">
-                <strong>Efectivo:</strong> Se habilitará un cofre seguro con sobres.
+              <p className="text-gray-700 text-base">
+                <strong className="text-lg underline">Efectivo:</strong> El día de la boda habrá un cofre guardián donde dejar vuestro detalle con todo el cariño 💝
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <p className="text-gray-700">
-                <strong>Transferencia o Bizum:</strong> Para vuestra comodidad, también podéis hacerlo por transferencia.
+                <strong>Bizum:</strong> Una forma rápida y sencilla 📱
               </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <p className="text-gray-700 mb-3">
+                  <strong>Transferencia bancaria:</strong> Para mayor comodidad, también podéis hacerlo por transferencia 🏦
+                </p>
+                <div className="bg-amber-50/50 rounded-lg p-4 mb-3 border border-amber-100">
+                  <p className="text-sm text-gray-700 mb-3">
+                    🔒 <strong>Por motivos de seguridad:</strong><br/>
+                    Para acceder a los datos bancarios, por favor solicita acceso al siguiente documento privado:
+                  </p>
+                  <div className="text-center">
+                    <a
+                        href={googleDriveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-2.5 bg-teal-600 text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors shadow-sm hover:shadow-md"
+                      >
+                        <Gift className="w-4 h-4" />
+                        Ver datos
+                      </a>
+                  </div>
+                </div>
+                <div className="mt-3">
+                  <p className="text-xs text-gray-600 italic">
+                    <strong>Nota:</strong> Para que Hacienda no se nos acople al viaje, 
+                    mejor evitar poner conceptos como "regalo de boda" 🤫
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="text-center mt-8">
-            <a
-              href={googleDriveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-rose-600 text-white font-semibold rounded-full hover:bg-rose-700 transition-colors shadow-md hover:shadow-lg"
-            >
-              <Gift className="w-5 h-5" />
-              Ver información de cuentas
-            </a>
-            <p className="text-sm text-gray-600 mt-3">
-              Por privacidad, los datos bancarios están en un documento privado
-            </p>
-          </div>
         </div>
 
         <div className="text-center mt-8">
           <p className="text-gray-600 italic">
-            Gracias de corazón por hacer de este día algo inolvidable 💕
+              Cualquier detalle será recibido con todo nuestro amor y agradecimiento 💕
           </p>
         </div>
       </div>
