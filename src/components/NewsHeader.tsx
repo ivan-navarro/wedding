@@ -3,8 +3,39 @@ import React from 'react';
 export const NewsHeader: React.FC = () => {
   const news = [
     {
-      date: '22 de Enero',
+      date: '22 de Febrero',
       badge: '¡Novedad!',
+      title: '¡Música para la fiesta! 🎵',
+      image: 'img/music.png',
+      imageAlt: 'Música y celebración',
+      content: (
+        <>
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            ¡Qué emoción ya se va acercando la fecha!
+            Queremos que esta fiesta sea épica... Por eso hemos activado una nueva sección 
+            donde podéis sugerir las canciones que no pueden faltar en nuestra celebración.
+          </p>
+          
+          <p className="text-gray-700 mb-4 leading-relaxed">
+            Podéis enviarnos vuestras propuestas a través de{' '}
+            <a href="#music" className="text-purple-600 font-semibold underline hover:text-purple-700">
+              nuestro formulario
+            </a>{' '}
+            o añadirlas directamente a una playlist colaborativa de Spotify.
+          </p>
+          
+          <div className="bg-purple-100 border-l-4 border-purple-500 p-3 mb-4 rounded">
+            <p className="text-gray-800 text-sm font-semibold">
+              🎶 ¡Entre todos vamos a crear la banda sonora perfecta para esta noche inolvidable!
+            </p>
+          </div>
+        </>
+      ),
+      footer: '💃🕺 ¡Gracias por ayudarnos a montar la fiesta del año!'
+    },
+    {
+      date: '22 de Enero',
+      badge: 'Regalos',
       title: '¡Nueva sección! 🎁',
       image: 'img/regalo-viaje.jpg',
       imageAlt: '',

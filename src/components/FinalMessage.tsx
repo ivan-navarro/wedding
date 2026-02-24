@@ -1,7 +1,12 @@
 import React from 'react';
 import { HeartIcon } from 'lucide-react';
 
-export const FinalMessage: React.FC = () => {
+interface FinalMessageProps {
+  brideFirstName: string;
+  groomFirstName: string;
+}
+
+export const FinalMessage: React.FC<FinalMessageProps> = ({ brideFirstName, groomFirstName }) => {
   return (
     <section className="pt-4 pb-12 bg-gradient-to-r from-rose-50 to-pink-50">
       <div className="container mx-auto px-4 md:px-6 text-center">
@@ -28,7 +33,7 @@ export const FinalMessage: React.FC = () => {
             Con todo nuestro amor,
           </p>
           <p className="text-xl text-rose-600 font-semibold mt-2">
-            Ivan & Yuliana
+            {groomFirstName} & {brideFirstName}
           </p>
         </div>
       </div>

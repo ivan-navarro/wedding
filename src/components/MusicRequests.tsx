@@ -8,7 +8,7 @@ interface MusicRequestsProps {
 
 export const MusicRequests: React.FC<MusicRequestsProps> = ({
   googleFormUrl = 'https://forms.gle/Ct2fhj6W4q9dq3fW8',
-  spotifyPlaylistUrl = 'https://open.spotify.com/playlist/6MU7VWlzVkV4F3CYTXhhwV?si=y_jxD0MwTBmVd-eZDzVGhA&pi=i2yOK5WYR16qm'
+  spotifyPlaylistUrl = 'https://open.spotify.com/playlist/3DwWzkWge90KmJFcNjBoDG?si=sgJJUMv5SkC327-rKkuRXg&pt=e579abbaefeab35216b850cb762d680b&pi=AFjpg3c4QImgK'
 }) => {
   return (
     <section id="music" className="py-12 px-4 bg-gradient-to-b from-neutral-50 to-white">

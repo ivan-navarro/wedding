@@ -75,8 +75,8 @@ export const Gifts: React.FC<GiftsProps> = ({
                 </div>
                 <div className="mt-3">
                   <p className="text-xs text-gray-600 italic">
-                    <strong>Nota:</strong> Para que Hacienda no se nos acople al viaje, 
-                    mejor evitar poner conceptos como "regalo de boda" 🤫
+                    <strong>Nota:</strong> Para evitar que Hacienda se nos apunte al viaje, 
+                    preferiblemente evitar conceptos como "regalo boda" 🤫
                   </p>
                 </div>
               </div>
