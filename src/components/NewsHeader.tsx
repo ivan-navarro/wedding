@@ -36,22 +36,24 @@ export const NewsHeader: React.FC = () => {
     {
       date: '22 de Enero',
       badge: 'Regalos',
-      title: '¡Nueva sección! 🎁',
+      title: '¡Ayúdanos a soñar nuestra luna de miel! 🌴✈️',
       image: 'img/regalo-viaje.jpg',
       imageAlt: '',
       content: (
         <>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Tras vuestras consultas y muestras de cariño, hemos creado una nueva sección 
-            donde podéis ayudarnos a cumplir el sueño de nuestra luna de miel perfecta. 
-            ¡Vuestra presencia ya es el mayor regalo!
+            Muchos nos habéis preguntado cómo podéis contribuir a nuestra gran aventura... 
+            ¡Por eso hemos creado un rinconcito especial! Si queréis apoyarnos a hacer realidad 
+            el viaje de nuestros sueños, aquí podéis descubrir cómo. 
+            ¡Vuestra presencia ya es el mejor de los regalos! 💝
           </p>
           
           <p className="text-gray-700 mb-4 leading-relaxed">
-            {' '}
+            Visita nuestra sección de{' '}
             <a href="#gifts" className="text-rose-600 font-semibold underline hover:text-rose-700">
-              Regalos
+              regalos
             </a>{' '}
+            para más detalles.
           </p>
         </>
       ),
