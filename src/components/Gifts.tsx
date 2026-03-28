@@ -29,10 +29,10 @@ export const Gifts: React.FC<GiftsProps> = ({
                 Vuestra presencia es nuestro mayor tesoro
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Compartir este día especial con vosotros es el regalo más valioso que podríamos 
-                recibir. Si además queréis contribuir con vuestro cariño a hacer realidad 
-                nuestra luna de miel soñada 🌏✈️, aceptaremos vuestro gesto con el corazón lleno 
-                de gratitud:
+                Lo más importante para nosotros es compartir este día con vosotros.
+                Si además os apetece tener un pequeño detalle, os dejamos por aquí
+                algunas opciones para hacerlo de la manera que os resulte más cómoda,
+                siempre con muchísimo cariño.
               </p>
             </div>
           </div>
@@ -41,25 +41,25 @@ export const Gifts: React.FC<GiftsProps> = ({
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <p className="text-gray-700 text-base">
-                <strong className="text-lg underline">Efectivo:</strong> El día de la boda habrá un cofre guardián donde dejar vuestro detalle con todo el cariño 💝
+                <strong className="text-lg underline">Efectivo:</strong> El día de la boda habrá un rinconcito preparado para quien quiera dejar algún detalle con cariño 💝
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <p className="text-gray-700">
-                <strong>Bizum:</strong> Una forma rápida y sencilla 📱
+                <strong>Bizum:</strong> Una forma fácil y cómoda para quien prefiera esta opción 📱
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <p className="text-gray-700 mb-3">
-                  <strong>Transferencia bancaria:</strong> Para mayor comodidad, también podéis hacerlo por transferencia 🏦
+                  <strong>Transferencia bancaria:</strong> Si os viene mejor, también podéis hacerlo por transferencia 🏦
                 </p>
                 <div className="bg-amber-50/50 rounded-lg p-4 mb-3 border border-amber-100">
                   <p className="text-sm text-gray-700 mb-3">
-                    🔒 <strong>Por motivos de seguridad:</strong><br/>
-                    Para acceder a los datos bancarios, por favor solicita acceso al siguiente documento privado:
+                    🔒 <strong>Acceso privado:</strong><br/>
+                    Hemos dejado los datos en un documento privado al que podéis acceder desde aquí:
                   </p>
                   <div className="text-center">
                     <a
@@ -74,21 +74,14 @@ export const Gifts: React.FC<GiftsProps> = ({
                   </div>
                 </div>
                 <div className="mt-3">
-                  <p className="text-xs text-gray-600 italic">
-                    <strong>Nota:</strong> Para evitar que Hacienda se nos apunte al viaje, 
-                    preferiblemente evitar conceptos como "regalo boda" 🤫
+                  <p className="text-sm text-gray-600 italic">
+                    Cualquier detalle lo recibiremos con muchísima ilusión y agradecimiento 💕
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-        </div>
-
-        <div className="text-center mt-8">
-          <p className="text-gray-600 italic">
-              Cualquier detalle será recibido con todo nuestro amor y agradecimiento 💕
-          </p>
         </div>
       </div>
     </section>

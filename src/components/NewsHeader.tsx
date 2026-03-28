@@ -36,28 +36,27 @@ export const NewsHeader: React.FC = () => {
     {
       date: '22 de Enero',
       badge: 'Regalos',
-      title: '¡Ayúdanos a soñar nuestra luna de miel! 🌴✈️',
+      title: 'Un pequeño rincón para los regalos 💝',
       image: 'img/regalo-viaje.jpg',
       imageAlt: '',
       content: (
         <>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Muchos nos habéis preguntado cómo podéis contribuir a nuestra gran aventura... 
-            ¡Por eso hemos creado un rinconcito especial! Si queréis apoyarnos a hacer realidad 
-            el viaje de nuestros sueños, aquí podéis descubrir cómo. 
-            ¡Vuestra presencia ya es el mejor de los regalos! 💝
+            Como varios nos habéis preguntado por este tema, hemos preparado un pequeño rincón
+            con la información de regalos para quien le apetezca tener un detalle con nosotros.
+            Aun así, lo decimos de corazón: lo mejor de todo será teneros allí acompañándonos 💕
           </p>
           
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Visita nuestra sección de{' '}
+            Si queréis echarle un vistazo, podéis pasar por la sección de{' '}
             <a href="#gifts" className="text-rose-600 font-semibold underline hover:text-rose-700">
               regalos
             </a>{' '}
-            para más detalles.
+            y ver las distintas opciones.
           </p>
         </>
       ),
-      footer: '💕 ¡Gracias de corazón por hacer de este día algo inolvidable!'
+      footer: '💕 Gracias por estar cerca y por acompañarnos con tanto cariño.'
     },
     {
       date: '7 de Enero',
@@ -93,7 +92,7 @@ export const NewsHeader: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto space-y-12">
           {news.map((item, index) => (
-            <React.Fragment key={index}>
+            <React.Fragment key={`${item.date}-${item.badge}`}>
               <div className="md:flex items-center gap-8">
               {/* Image */}
               <div className="md:w-1/3 mb-6 md:mb-0">
