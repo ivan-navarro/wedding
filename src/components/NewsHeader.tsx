@@ -42,9 +42,10 @@ export const NewsHeader: React.FC = () => {
       content: (
         <>
           <p className="text-gray-700 mb-4 leading-relaxed">
-            Como varios nos habéis preguntado por este tema, hemos preparado un pequeño rincón
-            con la información de regalos para quien le apetezca tener un detalle con nosotros.
-            Aun así, lo decimos de corazón: lo mejor de todo será teneros allí acompañándonos 💕
+            Muchos nos habéis preguntado cómo podéis contribuir a nuestra gran aventura... 
+            ¡Por eso hemos creado un rinconcito especial! Si queréis apoyarnos a hacer realidad 
+            el viaje de nuestros sueños, aquí podéis descubrir cómo. 
+            ¡Aunque vuestra presencia ya es el mejor de los regalos! 💝
           </p>
           
           <p className="text-gray-700 mb-4 leading-relaxed">

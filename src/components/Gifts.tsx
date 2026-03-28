@@ -22,17 +22,17 @@ export const Gifts: React.FC<GiftsProps> = ({
         </div>
 
         <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 shadow-lg border border-rose-100">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4 mb-3">
             <Heart className="w-6 h-6 text-rose-500 flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
-                Vuestra presencia es nuestro mayor tesoro
+                Vuestra presencia ya es nuestro mayor tesoro
               </h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Lo más importante para nosotros es compartir este día con vosotros.
-                Si además os apetece tener un pequeño detalle, os dejamos por aquí
-                algunas opciones para hacerlo de la manera que os resulte más cómoda,
-                siempre con muchísimo cariño.
+              <p className="text-gray-700 leading-relaxed mb-2">
+                Compartir este día especial con vosotros es, sin duda, el mejor regalo.
+                Si además os apetece tener un detalle, os dejamos algunas opciones para
+                hacerlo de la manera que os resulte más cómoda, siempre con todo nuestro
+                cariño y gratitud:
               </p>
             </div>
           </div>
@@ -41,20 +41,20 @@ export const Gifts: React.FC<GiftsProps> = ({
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <p className="text-gray-700 text-base">
-                <strong className="text-lg underline">Efectivo:</strong> El día de la boda habrá un rinconcito preparado para quien quiera dejar algún detalle con cariño 💝
+                <strong className="text-lg underline">Efectivo:</strong> El día de la boda habrá un cofre guardián para quien quiera dejar un detalle con cariño 💝
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <p className="text-gray-700">
-                <strong>Bizum:</strong> Una forma fácil y cómoda para quien prefiera esta opción 📱
+                <strong>Bizum:</strong> Una opción cómoda y sencilla para quien la prefiera 📱
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-2 h-2 bg-rose-400 rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <p className="text-gray-700 mb-3">
-                  <strong>Transferencia bancaria:</strong> Si os viene mejor, también podéis hacerlo por transferencia 🏦
+                  <strong>Transferencia bancaria:</strong> Si os resulta más práctico, también podéis hacerlo por transferencia 🏦
                 </p>
                 <div className="bg-amber-50/50 rounded-lg p-4 mb-3 border border-amber-100">
                   <p className="text-sm text-gray-700 mb-3">
@@ -75,7 +75,7 @@ export const Gifts: React.FC<GiftsProps> = ({
                 </div>
                 <div className="mt-3">
                   <p className="text-sm text-gray-600 italic">
-                    Cualquier detalle lo recibiremos con muchísima ilusión y agradecimiento 💕
+                    Cualquier detalle será recibido con todo nuestro amor y agradecimiento 💕
                   </p>
                 </div>
               </div>
